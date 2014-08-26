@@ -51,6 +51,7 @@ object D {
       fjn(i) = num
     }
     map.clear
+
     object SegmentTree {
 
       val N = Math.pow(2, 21).toInt
@@ -104,7 +105,7 @@ object D {
     var ans: Long = 0
     for (i <- 0 until f1i.length) {
       ans += SegmentTree.sum(0, f1i(i) - 1)
-      SegmentTree.dec(fjn(i))
+      SegmentTree.dec(fjn(i)) // why dec?
     }
     out.println(ans)
     return 1
