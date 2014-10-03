@@ -12,7 +12,8 @@ object CF467C extends App {
 
   val Array(n,m,k) = readInts(3)
   val p = readInts(n)
+  //val cumsum_p = Array.ofDim[Long]
 
   val d = Array.ofDim[Long](n, k)
-  d.f
+
 }

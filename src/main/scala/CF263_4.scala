@@ -31,7 +31,7 @@ object CF263_4 extends App {
     if(rb(v) == 1) {
       cumv
     } else {
-
+      cumv
     }
 
   }
