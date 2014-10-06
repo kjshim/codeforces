@@ -1,4 +1,4 @@
-object BY2015_6_mine extends App {
+object BY2015_5_ref extends App {
   case class Point(x:Long, y:Long)
   type Universe = Seq[Point]
 
