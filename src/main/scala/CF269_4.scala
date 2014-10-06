@@ -66,8 +66,6 @@ object  CF269_4 extends App {
           m = m + 1
           sadder = wl(i) - sl(m + i)
         }
-
-
       } else {
         i = i + 1
       }
@@ -83,9 +81,5 @@ object  CF269_4 extends App {
       }
     }
   }
-
-
   println(count)
-
-
 }
