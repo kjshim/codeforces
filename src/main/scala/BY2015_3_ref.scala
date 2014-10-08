@@ -25,6 +25,8 @@ object C extends App {
       var lux = 0
       var luy = 0
       var found  = false
+
+      // lowest x,y
       for (i <- 0 until n) {
         for (j <- 0 until m) {
           if (!found && gs(i)(j)) {
@@ -36,6 +38,7 @@ object C extends App {
       }
       //out.println(lux, luy)
 
+      // possible maximum y size from luy
       var maxY = 1
       var foundMaxY = false
       for (i <- luy + 1 until m) {
@@ -51,6 +54,7 @@ object C extends App {
 
       var x = 1
 
+      // possible maximum x size from lux
       var foundX = false
       for (i <- lux + 1 until n) {
         if (!foundX && gs(i)(luy) == false) {
@@ -76,7 +80,7 @@ object C extends App {
         }
       }
 
-      //out.println(x, y)
+      out.println(x, y)
 
       val ps = Array.fill(n, m)(false)
 
